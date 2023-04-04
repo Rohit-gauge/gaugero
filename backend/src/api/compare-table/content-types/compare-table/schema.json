@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "compare_tables",
+  "info": {
+    "singularName": "compare-table",
+    "pluralName": "compare-tables",
+    "displayName": "compareTable",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "features": {
+      "type": "string"
+    },
+    "gauge": {
+      "type": "string"
+    },
+    "others": {
+      "type": "string"
+    }
+  }
+}

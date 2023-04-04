@@ -1,0 +1,872 @@
+.about-main-wrap {
+    background-image: url(https://gauge.ro/wp-content/uploads/2022/09/Curve-main-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-main-wrap  .test-black {
+   color: black;
+}
+.about-main-wrap .call-us-icon {
+  color: black;
+}
+
+.about-title-heading{
+    font-weight: bolder !important;
+    text-transform: capitalize;
+    font-size: 3.75em;
+    line-height: 1.3em !important;
+    color: #191d27;
+}
+.about-para-one{
+  font-weight: 500 !important;
+    text-transform: none;
+    font-size: 1em;
+    line-height: 1.75em !important;
+    color: #6b6b6b;
+}
+.whitespace-nowrap {
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+.company-widget-image img {
+  vertical-align: middle;
+  display: inline-block;
+}
+.company {
+  position: absolute;
+  top: 64px;
+  left: -114px;
+}
+.company img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+.about-highlight-text {
+    color: #2893f5;
+}
+.about-main-wrap h5 {
+  color: #020101;
+}
+
+.title-company {
+  font-weight: 500 !important;
+  text-transform: none;
+  font-size: 1em;
+  line-height: 1.75em !important;
+  color: #6b6b6b;
+}
+@media (max-width: 767px) { 
+  .about-section {
+    padding: 90px 0px 136px 0px;
+  }
+ 
+  .about-title-heading {
+    font-weight: bolder !important;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    padding: 0px 0px 16px;
+  }
+  .company-widget-container {
+    text-align: center;
+  }
+
+}
+
+
+
+/* card know more  */
+.card-more {
+  border-radius: 40px 40px 40px 40px;
+  padding: 60px 40px 60px 40px;
+  background-color: white;
+  
+}
+.card-more:hover {
+  
+  box-shadow: 5px 5px 20px 8px rgb(233 239 241 / 46%)
+}
+.card-more-sd {
+  box-shadow: 5px 5px 20px 8px rgb(233 239 241 / 46%)
+}
+
+.more-heading {
+  padding: 0px 0px 57px 0px;
+}
+
+.know-more-tile {
+  color: #FF5F55;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.heading-k-more {
+  margin-right: 0px;
+    display: block;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.heading-k-more > h2 {
+  position: relative;
+  font-weight: 600 !important;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    line-height: 1.4em !important;
+    color: #191d27;
+}
+
+.card-icon-list-item {
+  display: flex;
+  align-items: center;
+  font-size: inherit;
+}
+
+.card-icon-list-items  {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.card-icon-list-items{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-icon-list-text {
+  font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #191D27;
+    padding-left: 0px;
+    text-align: start;
+}
+
+.card-icon-list-icon svg {
+  margin: var(--e-icon-list-icon-margin,0 calc(var(--e-icon-list-icon-size, 6em) * .25) 0 0);
+}
+
+.card-info {
+  text-align: start;
+    font-weight: 500 !important;
+    text-transform: none;
+    font-size: 1em;
+    line-height: 1.75em !important;
+    color: #6b6b6b;
+}
+
+@media (max-width: 767px)    { 
+  /* .about-main-wrap {
+    padding: 0px 15px 128px 15px;
+  } */
+
+  .more-heading {
+    text-align: center;
+    padding: 0px 0px 22px 0px;
+}
+.heading-k-more > h2 {
+  font-weight: 600 !important;
+    text-transform: capitalize;
+    font-size: 1.775em;
+}
+.card-more {
+  padding: 30px 30px 30px 30px;
+}
+.heading-k-more {
+  padding: 0px 0px 22px 0px;
+}
+
+
+}
+
+
+/* cofounder  */
+
+p.cofounder-title {
+  font-weight: 500 !important;
+  text-transform: none;
+  font-size: 1em;
+  line-height: 1.75em !important;
+  color: #6b6b6b;
+  margin-bottom: 20px;
+}
+
+.co-founder-title-wrap {
+  margin: -10px 0px 0px 0px;
+  padding: 0px 0px 30px 0px;
+}
+
+.cofounder-widget-container {
+  padding: 0px 0px 0px 0px;
+  width: 14%;
+}
+.cofounder-widget-container img {
+  
+  vertical-align: middle;
+    display: inline-block;
+    height: auto;
+    
+    max-width: 100%;
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+  
+}
+.cofounder-main-wrap {
+  padding: 51px 170px 0px 60px;
+}
+@media (max-width: 770px) {
+  .cofounder-main-wrap {
+    padding: 62px 70px 64px 60px;
+  }
+  
+}
+@media (max-width: 10240px) {
+  .cofounder-main-wrap {
+    padding: 51px 0px 0px 0px;
+  }
+  
+}
+
+
+.cofounder-name {
+  color: #F5461B;
+  font-weight: 600 !important;
+  text-transform: capitalize;
+  font-size: 1.25em;
+  line-height: 1.5em !important;
+  padding: 20px 0px 10px 0px;
+}
+
+@media (max-width: 767px) {
+  .cofounder-widget-container {
+    margin: 0% 0% 0% 0%;
+  }
+  .cofounder-main-wrap {
+    padding: 62px 0px 30px 0px;
+  }
+  .cofounder-name {
+    padding: 0 0;
+  }
+}
+@media (max-width: 1200px) {
+  .cofounder-widget-container {
+    padding: 0px 0px 27px 0px;
+  }
+}
+
+
+/* our story  */
+.story-main-wrap {
+  padding: 0px 70px 0px 60px;
+}
+.our-story-wrap {
+  font-weight: 600 !important;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    line-height: 1.4em !important;
+    color: #191d27;
+    text-align: center;
+}
+.elementor-spacer {
+  height: 100%;
+}
+.elementor-spacer-inner {
+  height: var(--container-widget-height,var(--spacer-size));
+}
+
+@media (max-width: 767px) {
+  
+  .story-main-wrap {
+    padding: 62px 20px 20px 20px;
+  }
+ 
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+  
+  .story-main-wrap {
+    padding: 0px 0px 0px 0px;
+  }
+ 
+}
+
+/* team  */
+ .team-title {
+  text-align: center;
+  font-weight: 600 !important;
+  text-transform: none;
+  font-size: 1em;
+  line-height: 1.75em !important;
+  color: whitesmoke;
+ 
+  
+}
+.team-subtitle {
+  color: rgb(235, 234, 234);
+
+}
+.red {
+  color: #FF5F55;
+}
+
+.subtitle {
+ 
+    font-weight: 600 !important;
+    text-transform: capitalize;
+    font-size: 2.5em !important;
+    line-height: 1.4em !important;
+    color: #191d27;
+
+}
+
+/* .team-main-wrap {
+  background-image: url(https://gauge.ro/wp-content/uploads/2022/09/vector-line-curve.webp);
+  background-position: cover;
+  background-repeat: no-repeat;
+
+} */
+.team-wrap {
+  padding: 20px 5px 30px;
+  
+}
+.main-team-wrap {
+  background-image: url(https://gauge.ro/wp-content/uploads/2022/09/vector-line-curve.webp);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+
+
+@media (max-width: 767px) {
+  .team-img-wrap {
+    padding: 15px !important; 
+  }
+  
+  .team-heading-wrap {
+    margin-bottom: 40px !important;
+    text-align: center;
+  }
+
+ .subtitle {
+    font-weight: 600 !important;
+    text-transform: capitalize;
+    font-size: 1.875em !important;
+}
+.team-wrap {
+  padding: 10px 0px;
+  
+}
+
+} 
+.team-main-wrap {
+  max-width: 1340px;
+  margin: 0 auto;
+  }
+  
+  .team-heading-wrap {
+  margin-bottom: 40px;
+  }
+  
+  .our-team {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  margin-top: 5rem;
+  }
+  
+  .subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  /* margin-top: 16px; */
+  }
+  
+  .team-card-wrap {
+  margin-bottom: 30px;
+  }
+  
+  .team-card {
+  position: relative;
+  overflow: hidden;
+  }
+  
+  .team-img-wrap {
+  position: relative;
+  padding: 4px;
+  }
+  
+  .team-img {
+  transition: transform 0.2s ease-in-out;
+  }
+  
+  .team-img:hover {
+  transform: scale(1.1);
+  }
+  
+  .team-overlay {
+  position: absolute;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  }
+  
+  .team-card:hover .team-overlay {
+  opacity: 1;
+  }
+  
+  .team-info-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  }
+  
+  .team-card:hover .team-info-wrap {
+  opacity: 1;
+  }
+  
+  .team-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  }
+  
+  .team-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  }
+
+  @media (max-width: 767px) {
+    .our-team { margin-top: 0px };
+  }
+
+/* contact  */
+
+.contact-main-wrap {
+  background-color: transparent !important;
+    background-image: linear-gradient(111.69deg, #EDF8FC 0%, #F3F7F6 100%) !important;
+    /* padding: 0px 15px 120px 15px; */
+    padding-bottom:  120px;
+}
+
+
+.form-wrap {
+  background-color: #FFFFFF;
+    padding: 45px 60px 52px 60px;
+    border-radius: 20px 20px 20px 20px;
+}
+.form-title {
+  font-weight: 600 !important;
+  text-transform: capitalize;
+  font-size: 1.875em;
+  line-height: 1.3em !important;
+  color: #191d27;
+  padding: 0px 0px 11px 0px;
+  
+}
+
+.formLabel {
+  color: #191d27;
+  font-weight: 400;
+}
+
+.contact-input {
+  width: calc(100% - 10px);
+    height: 52px;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #CFCFCF;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.textarea {
+  width: 100%;
+    height: 112px;
+    resize: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #CFCFCF;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #020101;
+}
+
+.send-btn {
+  background-color: #0e1552;
+    color: #fff;
+    padding: 14px 44px;
+    border-radius: 50px !important;
+    border: none;
+    width: fit-content;
+    text-align: center;
+}
+
+@media (max-width:770px) {
+  .send-btn {
+    display: flex;
+    margin: auto;
+  }
+}
+
+.get-touch-title {
+  padding: 32px 0px 8px 0px;
+
+
+}
+.get-touch-subtitle {
+  padding: 0px 0px 21px 0px;
+  font-weight: 600 !important;
+  text-transform: capitalize;
+  font-size: 2.5em;
+  line-height: 1.4em !important;
+  color: #191d27;
+
+}
+
+.form-widget-container {
+  margin: 0px 0px 26px 0px;
+    padding: 7px 0px 10px 55px;
+    background-image: url(https://gauge.ro/wp-content/uploads/2022/09/Group-7.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.form-widget-container-two {
+  margin: 0px 0px 26px 0px;
+  padding: 7px 0px 10px 55px;
+  background-image: url(https://gauge.ro/wp-content/uploads/2022/09/icon-section.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.form-widget-container-three {
+  margin: 0px 0px 26px 0px;
+  padding: 7px 0px 10px 55px;
+  background-image: url(https://gauge.ro/wp-content/uploads/2022/09/icon-section-1.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.form-title-heading {
+  font-size: 16px;
+  font-weight: 500;
+  color: #191D27;
+  margin-right: 0px;
+  display: block;
+  word-wrap: break-word;
+  position: relative;
+}
+
+span.form-highlight-txt {
+  color: #1962F2;
+}
+
+
+
+@media (max-width: 1024px) {
+  .width-table {
+    width: 87vw;
+  }
+  .form-wrap {
+    margin-top: 50px;
+    padding: 45px 27px 52px 20px;
+  }
+  .contact-main-wrap {
+    padding-bottom: 47px;
+  }
+  .form-title  {
+    text-align: center;
+  }
+  .form-subtitle {
+    text-align: center;
+  }
+}
+
+/* terms  */
+.terms-main-wrap {
+  background: #ffffff !important;
+}
+
+.term-widget-container {
+  width: var(--container-widget-width, 75% );
+  height: 100%;
+}
+.term-widget-container h2 {
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 2.5em;
+  line-height: 1.4em;
+  color: #191d27;
+}
+.term-widget-container h3 {
+  font-weight: 600 !important;
+  text-transform: capitalize;
+  font-size: 1.875em;
+  line-height: 1.3em !important;
+  color: #191d27;
+}
+.term-widget-container p {
+  font-weight: 500 !important;
+  text-transform: none;
+  font-size: 1em;
+  line-height: 1.75em !important;
+  color: #6b6b6b;
+  margin-bottom: 20px;
+
+}
+.term-widget-container .para {
+  margin-bottom: 0 !important;
+}
+@media (max-width: 767px) { 
+.term-widget-container {
+  width: var(--container-widget-width, 85% );
+margin: 16px 0px 16px 16px;
+padding: 65px 23px 23px 23px;
+
+}
+.term-widget-container h2 {
+  font-weight: 600 !important;
+    text-transform: capitalize;
+    font-size: 1.875em;
+}
+.term-widget-container h3 {
+  font-weight: 700 !important;
+  text-transform: capitalize;
+}
+}
+
+
+/* privacy  */
+.privacy-main-wrap {
+  background: #ffffff !important;
+}
+
+strong {
+  font-weight: 700;
+  color: #6b6b6b !important;
+}
+.privacy-container  h4 {
+  font-weight: 600 !important;
+  text-transform: capitalize;
+  font-size: 1.875em;
+  line-height: 1.3em !important;
+  color: #191d27;
+}
+.privacy-container  h3 {
+  font-weight: 600 !important;
+    text-transform: capitalize;
+    font-size: 1.875em;
+    line-height: 1.3em !important;
+    color: #191d27;
+}
+.card {
+  
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 0.5rem;
+padding: 1.25rem;
+width: 100%;
+max-width: 19rem;
+height: 100%;
+background-color: #F3F4F6;
+border-radius: 1rem;
+border: 1px solid #D1D5DB;
+
+
+}
+@media (max-width: 768px) { 
+  .card {
+    max-width: 20rem;
+  }
+ }
+
+
+
+   .wa-widget {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+  }
+  .wa-widget:last-child {
+    margin-right: 0;
+  }
+  .wa-widget.expanded {
+    border-radius: 1rem;
+  }
+  .wa-widget .wa-widget-content {
+    width: 360px;
+    transition: all 0.25s linear;
+    visibility: hidden;
+    position: absolute;
+    bottom: 6rem;
+    opacity: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .wa-widget .wa-widget-content.expanded {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+  }
+  .wa-widget-toggle {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 9rem;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    cursor: default;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  .wa-widget-toggle::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    background-color: red;
+    border-radius: 10px;
+  }
+  .wa-widget-content {
+    overflow: hidden;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+  }
+  .chat-header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #095e54;
+    color: white;
+  }
+  .chat-header .chat-admin-picture {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+    position: relative;
+  }
+  .chat-header .chat-admin-picture img {
+    width: 100%;
+    height: 100%;
+  }
+  .chat-header .chat-admin-picture::before {
+    content: '';
+    height: 7px;
+    width: 7px;
+    border-radius: 7px;
+    background-color: #4fce5d;
+    border: 2px solid #095e54;
+    position: absolute;
+    bottom: 2.3333333333px;
+    right: 2.3333333333px;
+  }
+  .chat-header h4, .chat-header p {
+    margin: 0.2rem;
+  }
+  .chat-content {
+    padding: 1rem;
+    background-color: #d1ecd4;
+  }
+  .chat-content .chat-admin-picture {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+  }
+  .chat-item {
+    display: inline-flex;
+    align-items: flex-end;
+  }
+  .chat-item p {
+    margin: 0 2rem 0.5rem 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+  }
+  .chat-item p:first-child {
+    border-top-left-radius: 0;
+  }
+  .chat-form {
+    background-color: white;
+    padding: 0.25rem;
+  }
+  .chat-form textarea, .chat-form input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: inherit;
+    font-family: inherit;
+    resize: none;
+    margin-bottom: 0.25rem;
+    transition: all 0.25s linear;
+  }
+  .chat-form textarea, .chat-form input, .chat-form input:focus {
+    border: 1px solid transparent;
+    outline: 0;
+    border-radius: 0.5rem;
+  }
+  .chat-form .chat-send {
+    border: 0;
+    outline: 0;
+    padding: 0.75rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #4fce5d;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+  .chat-form .required {
+    border: 1px solid rgba(255, 0, 0, 0.25);
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+  @media (max-width: 460px) {
+    .wa-widget {
+      width: 100%;
+    }
+    .wa-widget-toggle {
+      float: right;
+    }
+    .wa-widget-content {
+      width: auto;
+      left: 1rem;
+      right: 1rem;
+    }
+  }
+  

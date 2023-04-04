@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.landing-page {
+  background-image: url("https://gauge.ro/wp-content/uploads/2022/08/data-visualization-Software-banner-bg-1024x540.webp");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.gurantee {
+  background-image: url(https://gauge.ro/wp-content/uploads/2022/08/sec3-bg-scaled.webp);
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.rt-underline-txt {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.rt-underline-txt svg {
+  z-index: -1;
+  display: flex;
+  margin: 0px;
+}
+
+.experience-wrap {
+  background-image: url(https://gauge.ro/wp-content/uploads/2022/10/main-bg-section.webp);
+}
+.rt-underline-txt {
+ z-index: 1;
+
+}
+
+.third-section {
+  background-image: url("https://gauge.ro/wp-content/uploads/2022/10/section-design-bg.png");
+  background-position: -238px 681px;
+  
+}
+
+
+.icon-moving-rotate {
+  font-size: 10px;
+  animation: particlerotate1 5s infinite linear;
+  position: relative;
+  left: -55px;
+  top: 100px;
+}
+
+@keyframes particlerotate1 {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(359deg); /* Change the number of degrees to control the animation */
+  }
+}
+
+.landing-icon svg {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  display: block;
+}
+
+/* experience */
+
+.experience-element {
+  margin: 0px 149px 29px 0px;
+    padding: 10px 10px;
+    /* background-color: #EE964B; */
+    border-radius: 50%;
+    box-shadow:  0px 10px 11px 0px rgb(238 150 75 / 15%);
+}
+
+.experience-icon-wrapper {
+  width: 60px;
+  /* height: 64px; */
+  margin: 0 auto;
+}
+
+.experience-icon svg {
+  width: 1em;
+  height: 1em;
+  fill: #FFFFFF;
+  position: relative;;
+  top: 10px;
+  left: 2px;
+  
+}
+
+/* Accordion styles */
+.card {
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0;
+  background-color: #f8f9fa;
+}
+.card-header {
+  border: none;
+  background-color: #f8f9fa;
+}
+.btn-link {
+  text-decoration: none;
+  color: #212529;
+}
+.btn-link:hover {
+  text-decoration: none;
+}
+.btn-link:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+.collapse {
+  transition: height 0.35s ease;
+  height: 0;
+  overflow: hidden;
+}
+.show {
+  height: auto;
+}
+
+/* footer  */
+.footer-wrap {
+  background-image: url(https://gauge.ro/wp-content/uploads/2022/08/Footer-bg-scaled.webp);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.elementor-background-overlay {
+  background-image: url(https://gauge.ro/wp-content/uploads/2022/08/Footer-Polygon.png);
+  background-position: 800px 400px;
+  background-repeat: no-repeat;
+  background-size: 7% auto;
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.elementor-element.elementor-element-283780d {
+  width: var(--container-widget-width, 1716.5px );
+  max-width: 1716.5px;
+  --container-widget-width: 1716.5px;
+  --container-widget-flex-grow: 0;
+  right: -20px;
+}
+
+element.elementor-element-283780d {
+  left: -0px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .gurantee {
+   border-radius: 0 0;
+  }
+}
+
+/* //navbar */
+
+
+
