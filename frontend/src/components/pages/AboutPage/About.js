@@ -13,12 +13,13 @@ const About = () => {
   }, []);
   return (
     <>
-      <Chatbot />
+ 
       <OurCompany />
       <KnowMore />
       <CoFOunder />
       <OurStory />
       <Team />
+      <Chatbot />
       <Footer />
     </>
   );

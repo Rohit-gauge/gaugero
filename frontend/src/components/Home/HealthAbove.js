@@ -1,26 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { calculateImageSize } from "../utilities/ImageReducer";
+import React from "react";
+
 
 const HealthAbove = () => {
-  const [imageWidth, setImageWidth] = useState(0);
-  const [imageHeight, setImageHeight] = useState(0);
-  const [imageLoaded, setImageLoaded] = useState(false);
+ 
+  const mobileImageUrl = "https://ik.imagekit.io/aq3ybtarw/landing/health-above-min-mb.webp?updatedAt=1680628116430";
+  const desktopImageUrl = "https://ik.imagekit.io/aq3ybtarw/landing/health-above-min-lg.webp?updatedAt=1680627777068";
 
-  useEffect(() => {
-    const setImageSize = () => {
-      const image = new Image();
-      image.onload = () => {
-        const { width, height } = calculateImageSize(image.width, image.height);
-        setImageWidth(width);
-        setImageHeight(height);
-        setImageLoaded(true);
-      };
-      image.src =
-        "https://ik.imagekit.io/aq3ybtarw/gauge/health-above.webp?updatedAt=1680330512166";
-    };
-
-    setImageSize();
-  }, []);
 
   function scrollToNextSection() {
     const nextSection = document.querySelector("#exp");
@@ -29,19 +14,18 @@ const HealthAbove = () => {
     }
   }
 
-  const containerHeight = imageLoaded ? "auto" : `${imageHeight}px`;
-
   return (
     <section className="text-gray-600 body-font ">
       
       <div className="container mx-auto flex lg:px-28   xl:flex-row flex-col items-center sm:items-start  px-4 lg:pt-10 lg:pb-12 lg:mb-24 mb-12 pt-20 " >
-        <div  style={{ height: containerHeight }}>
+        <div className="md:mt-20"  >
           <img
-            alt="hero"
-            src={`https://ik.imagekit.io/aq3ybtarw/gauge/health-above.webp?tr=w-${imageWidth},h-${imageHeight},fo-auto&updatedAt=1680330512166`}
+            alt="healthabove"
+            srcSet={`${mobileImageUrl} 468w, ${desktopImageUrl} 768w`}
+            sizes="(max-width: 768px) 150vw, 98vw"
             className="object-cover object-center transition-transform duration-300 ease-in-out hover:-translate-y-2 rounded-3xl cursor-pointer"
-            width={imageWidth}
-            height={imageHeight}
+            
+           
           />
         </div>
 

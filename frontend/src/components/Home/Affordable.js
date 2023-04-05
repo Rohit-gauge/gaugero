@@ -1,23 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { calculateImageSize } from "../utilities/ImageReducer";
+import React from "react";
+
 
 const Affordable = () => {
-  const [imageWidth, setImageWidth] = useState(0);
-  const [imageHeight, setImageHeight] = useState(0);
 
-  useEffect(() => {
-    const setImageSize = () => {
-      const image = new Image();
-      image.onload = () => {
-        const { width } = calculateImageSize(image.width, image.height);
-        setImageWidth(width);
-      };
-      image.src =
-        "https://ik.imagekit.io/aq3ybtarw/gauge/water-purifier.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1678437195785";
-    };
+  
+  const mobileImageUrl = " https://ik.imagekit.io/aq3ybtarw/landing/affordable-min-mb.webp?updatedAt=1680628117513";
+  const desktopImageUrl = "https://ik.imagekit.io/aq3ybtarw/landing/affordable-min-lg.webp?updatedAt=1680627776964";
 
-    setImageSize();
-  }, []);
+ 
+ 
 
   return (
     <section id="affordable" className="text-gray-600 body-font ">
@@ -25,10 +16,9 @@ const Affordable = () => {
         <div className="lg:w-full w-full lg:pt-4 ">
           <img
             alt="hero"
-            src={`https://ik.imagekit.io/aq3ybtarw/gauge/affordable.webp?tr=w-${imageWidth},h-${imageHeight},fo-auto&iupdatedAt=1680328827110`}
+            srcSet={`${mobileImageUrl} 468w, ${desktopImageUrl} 768w`}
+            sizes="(max-width: 768px) 150vw, 50vw"
             className="object-cover object-center  transition-transform duration-300 ease-in-out hover:-translate-y-2 rounded-3xl  cursor-pointer"
-            width={imageWidth}
-            height={imageHeight}
           />
         </div>
 

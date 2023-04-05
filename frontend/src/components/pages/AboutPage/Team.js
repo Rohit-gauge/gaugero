@@ -25,7 +25,7 @@ const Team = () => {
     }
 
     fetchTeamData();
-    console.log(teamData + "teamdata");
+    
   }, []);
 
   return (

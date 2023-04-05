@@ -24,7 +24,6 @@ const Table = () => {
     }
 
     fetchtableData();
-    // console.log(tableData + "tabledata");
   }, []);
 
   function scrollToNextSection() {

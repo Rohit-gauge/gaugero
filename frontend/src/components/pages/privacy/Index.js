@@ -97,7 +97,7 @@ const Index = () => {
               <a
                 href="https://gauge.ro"
                 target="_blank"
-                rel="external nofollow noopener noreferrer"
+                rel="noreferrer"
               >
                 Lalita Ventures
               </a>

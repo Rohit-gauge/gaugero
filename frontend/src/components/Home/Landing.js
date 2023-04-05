@@ -3,40 +3,19 @@ import Nav from "./Nav";
 import "../../assets/css/custom.css";
 import logo from "../../assets/images/gauge.png";
 import redLogo from "../../assets/images/gauge-logo-red.png";
-import { calculateImageSize } from "../utilities/ImageReducer";
 
 const Landing = () => {
-  const [imageWidth, setImageWidth] = useState(0);
-  const [imageHeight, setImageHeight] = useState(0);
-  const [loading, setLoading] = useState(true);
+  const mobileImageUrl =
+    "https://ik.imagekit.io/aq3ybtarw/landing/mobile-landing.webp?updatedAt=1680626119244";
+  const desktopImageUrl =
+    "https://ik.imagekit.io/aq3ybtarw/landing/lg-landing.webp?updatedAt=1680626153268";
 
-  useEffect(() => {
-    const setImageSize = () => {
-      const image = new Image();
-      image.onload = () => {
-        const { width, height } = calculateImageSize(image.width, image.height);
-        setImageWidth(width);
-        setImageHeight(height);
-        setLoading(false);
-      };
-      image.src =
-        "https://ik.imagekit.io/aq3ybtarw/gauge/hero-image.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1678436650238";
-    };
-
-    setImageSize();
-
-    const handleResize = () => {
-      const { width, height } = calculateImageSize(imageWidth, imageHeight);
-      setImageWidth(width);
-      setImageHeight(height);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [imageWidth, imageHeight]);
+  function scrollToNextSection() {
+    const nextSection = document.querySelector("#next-section");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }
 
   function scrollToNextSection() {
     const nextSection = document.querySelector("#next-section");
@@ -51,19 +30,12 @@ const Landing = () => {
       <div className="container mx-auto lg:px-20 lg:pt-20 pt-10">
         <div className="text-gray-600 body-font">
           <div className="container lg:mx-auto flex flex-col xl:flex-row px-5 pb-24 text-center ">
-            <div className="xl:w-6/2 mb-5 lg:mb-0 relative landing-img-wrap flex items-center justify-center ">
-              {loading && (
-                <div style={{ width: imageWidth, height: imageHeight }}></div>
-              )}
+            <div className="xl:w-1/2 mb-5 lg:mb-0 relative landing-img-wrap flex items-center justify-center  ">
               <img
-                src={`https://ik.imagekit.io/aq3ybtarw/gauge/hero-image.webp?tr=w-${imageWidth},h-${imageHeight},fo-auto&ik-sdk-version=javascript-1.4.3&updatedAt=1678436650238`}
+                srcSet={`${mobileImageUrl} 768w, ${desktopImageUrl} 1024w`}
+                sizes="(max-width: 768px) 100vw, 55vw"
                 alt="hero"
-                className={`object-cover relative object-center rounded transition-transform duration-300 ease-in-out hover:-translate-y-2 max-w-full cursor-pointer ${
-                  loading ? "hidden" : ""
-                }`}
-                width={imageWidth}
-                height={imageHeight}
-                onLoad={() => setLoading(false)}
+                className={`object-cover relative object-center rounded transition-transform duration-300 ease-in-out hover:-translate-y-2 max-w-full cursor-pointer loading="lazy"`}
               />
               <div className="elementor-icon-wrapper hidden lg:block">
                 <div className="updown-icon absolute left-2 ">
@@ -81,7 +53,7 @@ const Landing = () => {
               </div>
             </div>
 
-            <div className="xl:w-6/2 lg:pl-16 md:pl-2 flex flex-col justify-center items-start text-start">
+            <div className="xl:w-1/2  md:pl-2 flex flex-col justify-center items-start text-start">
               <div className="hidden lg:block absolute icon-moving-rotate">
                 <div className="circle-icon">
                   {" "}
@@ -98,17 +70,6 @@ const Landing = () => {
               </div>
 
               <div className="landing-widget-container mx-auto lg:mx-6 lg:py-4 lg:pt-12">
-                {/* <h1 className="rt-textappear-line30 text-white rt-textappear-line ml-1 plus-jakarta-sans  xl:text-6xl  flex items-center text-center flex-col  text-capitalize text-4xl ">
-                  Gauge Water Purifier
-                  <span className="rt-heading-div relative inline-block text-blue-500">
-                    <span className="text-wrapper">
-                      <span className="letters inline-block relative  text-transparent bg-clip-text">
-                        Puts An End <span className="to-ro">To RO</span>
-                      </span>
-                    </span>
-                  </span>
-                  <span className="after-text mb-3 lg:mb-0"> Service Pain</span>
-                </h1> */}
                 <h1 className="rt-textappear-line70 text-center rt-textappear-line ml1 rt_gradient mb-5 xl:mb-2">
                   {" "}
                   Gauge Water Purifier{" "}

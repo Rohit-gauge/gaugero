@@ -1,26 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { calculateImageSize } from "../utilities/ImageReducer";
+import React from "react";
 
 const PureWater = () => {
-  const [imageWidth, setImageWidth] = useState(0);
-  const [imageHeight, setImageHeight] = useState(0);
-  const [imageLoaded, setImageLoaded] = useState(false); 
-
-  useEffect(() => {
-    const setImageSize = () => {
-      const image = new Image();
-      image.onload = () => {
-        const { width, height } = calculateImageSize(image.width, image.height);
-        setImageWidth(width);
-        setImageHeight(height);
-        setImageLoaded(true);
-      };
-      image.src =
-        "https://ik.imagekit.io/aq3ybtarw/gauge/pure-water.webp?updatedAt=1680329758283";
-    };
-
-    setImageSize();
-  }, []);
+  const mobileImageUrl =
+    " https://ik.imagekit.io/aq3ybtarw/landing/pure-water-min__1_-min-mb.webp?updatedAt=1680628118922";
+  const desktopImageUrl =
+    "https://ik.imagekit.io/aq3ybtarw/landing/pure-water-min_-lg.webp?updatedAt=1680643456935";
 
   function scrollToNextSection() {
     const nextSection = document.querySelector("#gurantee");
@@ -28,24 +12,17 @@ const PureWater = () => {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }
   }
-  const containerHeight = imageLoaded ? "auto" : `${imageHeight}px`;
+
   return (
     <section id="pure" className="text-gray-600 body-font third-section">
       <div className="container mx-auto flex lg:px-28   xl:flex-row flex-col items-center sm:items-start  px-4 lg:pt-20  ">
-
-      <div
-            className="container"
-            style={{ height: containerHeight }} 
-          >
         <div className="lg:w-full w-full lg:pt-24 ">
-        <img
+          <img
             alt="hero"
-            src={`https://ik.imagekit.io/aq3ybtarw/gauge/pure-water.webp?tr=w-${imageWidth},h-${imageHeight},fo-auto&updatedAt=1680329758283`}
+            srcSet={`${mobileImageUrl} 468w, ${desktopImageUrl} 768w`}
+            sizes="(max-width: 768px) 150vw, 50vw"
             className="object-cover object-center  transition-transform duration-300 ease-in-out hover:-translate-y-2 rounded-3xl  cursor-pointer"
-            width={imageWidth}
-            height={imageHeight}
           />
-        </div>
         </div>
 
         <div className="lg:flex-grow md:w-6/2 lg:w-full lg:ml-10   flex flex-col md:items-start md:text-left  text-start pure-main-wrap md:pr-12  ">
@@ -116,14 +93,13 @@ const PureWater = () => {
                 &nbsp;litres of water annually, making them a great choice for
                 water conservation.
               </p>
-              
             </div>
           </div>
           <div className="save-info-wrap flex mt-6 ">
             <div className="icon-check mt-2">
               <div className="elementor-icon">
                 {" "}
-                 <svg
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
                   height="18"
@@ -175,7 +151,10 @@ const PureWater = () => {
               </p>
             </div>
           </div>
-          <button onClick={scrollToNextSection}  className="rt-arrow-btn rounded-full bg-blue-500 w-fit  lg:px-12 px-10 lg:py-5 py-5 flex m-auto lg:mt-7 mt-6">
+          <button
+            onClick={scrollToNextSection}
+            className="rt-arrow-btn rounded-full bg-blue-500 w-fit  lg:px-12 px-10 lg:py-5 py-5 flex m-auto lg:mt-7 mt-6"
+          >
             <a
               href="#smartly-conserved"
               rel="nofollow"
